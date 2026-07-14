@@ -6,7 +6,7 @@ import { SocialLink } from "@/components/portfolio-helpers";
 import Nav from "@/components/Nav";
 import PageFooter from "@/components/PageFooter";
 import GradientBg from "@/components/GradientBg";
-import headshot from "@assets/varnika-headshot.jpg";
+import headshot from "@assets/image_1784072600923.png";
 
 export default function Home() {
   useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior }); }, []);
