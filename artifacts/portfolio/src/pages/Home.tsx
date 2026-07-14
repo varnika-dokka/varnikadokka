@@ -251,6 +251,10 @@ export default function Home() {
                   </div>
                   <span className="text-sm font-medium bg-muted px-3 py-1 rounded-full whitespace-nowrap">2022 - 2024</span>
                 </div>
+                <div className="space-y-2 text-muted-foreground mt-4">
+                  <p><strong className="text-foreground font-medium">GPA:</strong> 3.95 | National Honor Society</p>
+                  <p><strong className="text-foreground font-medium">Activities:</strong> DECA, JSA, NHS, Robotics, Chamber Orchestra</p>
+                </div>
               </div>
             </FadeIn>
 
