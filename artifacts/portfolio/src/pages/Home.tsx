@@ -1,21 +1,20 @@
+import { useEffect } from "react";
 import { Mail, Github, Linkedin } from "lucide-react";
+import { Link } from "wouter";
 import { FadeIn } from "@/components/animations";
 import { SocialLink } from "@/components/portfolio-helpers";
-import { Link } from "wouter";
 import Nav from "@/components/Nav";
 import PageFooter from "@/components/PageFooter";
+import GradientBg from "@/components/GradientBg";
 import headshot from "@assets/varnika-headshot.jpg";
 
 export default function Home() {
-  return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground overflow-hidden selection:bg-primary/20">
-      <div className="fixed inset-0 pointer-events-none z-50 mix-blend-multiply opacity-[0.03]" style={{ backgroundImage: 'url("https://grainy-gradients.vercel.app/noise.svg")' }} />
-      {/* Soft color wash behind hero */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute top-0 left-0 w-[60vw] h-[60vh] bg-gradient-to-br from-amber-100/60 via-orange-50/30 to-transparent rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-[40vw] h-[50vh] bg-gradient-to-tl from-violet-100/40 via-purple-50/20 to-transparent rounded-full blur-3xl" />
-      </div>
+  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior }); }, []);
 
+  return (
+    <div className="min-h-screen flex flex-col bg-transparent text-foreground overflow-hidden selection:bg-primary/20">
+      <GradientBg />
+      <div className="fixed inset-0 pointer-events-none z-50 mix-blend-multiply opacity-[0.03]" style={{ backgroundImage: 'url("https://grainy-gradients.vercel.app/noise.svg")' }} />
       <Nav />
 
       <main className="relative z-10 flex-1 flex flex-col justify-center px-6 md:px-12 lg:px-24 pt-32 pb-20 max-w-[1400px] mx-auto w-full">
@@ -49,13 +48,13 @@ export default function Home() {
             </FadeIn>
 
             <FadeIn delay={0.4}>
-              <div className="flex flex-wrap items-center gap-6">
+              <div className="flex flex-wrap items-center gap-4">
                 <a href="mailto:varnnikadokka@outlook.com" className="flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-full font-medium transition-transform hover:scale-105 active:scale-95">
                   <Mail className="w-4 h-4" />
                   Get in touch
                 </a>
                 <Link href="/work">
-                  <span className="flex items-center gap-2 border border-border px-6 py-3 rounded-full font-medium text-foreground/70 hover:text-foreground hover:border-foreground/40 transition-all cursor-pointer">
+                  <span className="flex items-center gap-2 border border-border px-6 py-3 rounded-full font-medium text-foreground/70 hover:text-foreground hover:border-foreground/40 transition-all cursor-pointer bg-white/60 backdrop-blur-sm">
                     View my work →
                   </span>
                 </Link>
@@ -70,7 +69,6 @@ export default function Home() {
           <FadeIn delay={0.3}>
             <div className="hidden lg:block shrink-0 mt-8 lg:mt-0">
               <div className="relative w-72 h-72 xl:w-80 xl:h-80">
-                {/* Colored ring behind photo */}
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 via-amber-300/20 to-violet-300/30 scale-105 blur-sm" />
                 <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl border border-white/40">
                   <img src={headshot} alt="Varnika V. Dokka" className="w-full h-full object-cover object-top" />

@@ -1,22 +1,26 @@
+import { useEffect } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { FadeIn } from "@/components/animations";
 import { ListItem } from "@/components/portfolio-helpers";
 import Nav from "@/components/Nav";
 import PageFooter from "@/components/PageFooter";
+import GradientBg from "@/components/GradientBg";
 import cacheImg from "@assets/cache-screenshot.png";
 import neuroLearnImg from "@assets/neurolearn-screenshot.png";
 
 export default function Work() {
+  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior }); }, []);
+
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground selection:bg-primary/20">
+    <div className="min-h-screen flex flex-col bg-transparent text-foreground selection:bg-primary/20">
+      <GradientBg />
       <div className="fixed inset-0 pointer-events-none z-50 mix-blend-multiply opacity-[0.03]" style={{ backgroundImage: 'url("https://grainy-gradients.vercel.app/noise.svg")' }} />
       <Nav />
 
       <main className="flex-1 pt-28">
-        {/* Page header */}
-        <div className="relative px-6 md:px-12 lg:px-24 pb-16 max-w-[1400px] mx-auto">
+        <div className="px-6 md:px-12 lg:px-24 pb-16 max-w-[1400px] mx-auto">
           <FadeIn>
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-4 pt-8">
               <span className="h-px w-8 bg-primary" />
               <span className="text-primary font-medium tracking-wide uppercase text-sm">Selected Projects</span>
             </div>
@@ -25,7 +29,7 @@ export default function Work() {
         </div>
 
         {/* Cache */}
-        <section className="px-6 md:px-12 lg:px-24 py-20 bg-gradient-to-br from-amber-50/80 via-orange-50/40 to-background border-y border-amber-100">
+        <section className="px-6 md:px-12 lg:px-24 py-20 bg-white/60 backdrop-blur-sm border-y border-amber-200/60">
           <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-5 order-2 lg:order-1">
               <FadeIn delay={0.1}>
@@ -49,7 +53,7 @@ export default function Work() {
             </div>
             <div className="lg:col-span-7 order-1 lg:order-2">
               <FadeIn delay={0.2}>
-                <div className="relative group rounded-2xl overflow-hidden shadow-2xl border border-amber-200/60 ring-1 ring-amber-100">
+                <div className="relative group rounded-2xl overflow-hidden shadow-2xl border border-amber-200/60">
                   <img src={cacheImg} alt="Cache app" className="w-full h-auto object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]" />
                 </div>
               </FadeIn>
@@ -58,11 +62,11 @@ export default function Work() {
         </section>
 
         {/* NeuroLearn */}
-        <section className="px-6 md:px-12 lg:px-24 py-20 bg-gradient-to-br from-violet-50/80 via-purple-50/40 to-background border-b border-violet-100">
+        <section className="px-6 md:px-12 lg:px-24 py-20 bg-white/60 backdrop-blur-sm border-b border-violet-200/60">
           <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7">
               <FadeIn delay={0.1}>
-                <div className="relative group rounded-2xl overflow-hidden shadow-2xl border border-violet-200/60 ring-1 ring-violet-100">
+                <div className="relative group rounded-2xl overflow-hidden shadow-2xl border border-violet-200/60">
                   <img src={neuroLearnImg} alt="NeuroLearn" className="w-full h-auto object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]" />
                 </div>
               </FadeIn>

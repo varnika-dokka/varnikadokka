@@ -1,23 +1,22 @@
+import { useEffect } from "react";
 import { FadeIn } from "@/components/animations";
 import { OtherCard } from "@/components/portfolio-helpers";
 import Nav from "@/components/Nav";
 import PageFooter from "@/components/PageFooter";
+import GradientBg from "@/components/GradientBg";
 
 export default function About() {
-  return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground selection:bg-primary/20">
-      <div className="fixed inset-0 pointer-events-none z-50 mix-blend-multiply opacity-[0.03]" style={{ backgroundImage: 'url("https://grainy-gradients.vercel.app/noise.svg")' }} />
-      {/* Color washes */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute top-0 right-0 w-[50vw] h-[50vh] bg-gradient-to-bl from-violet-100/50 to-transparent rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-[40vw] h-[40vh] bg-gradient-to-tr from-amber-100/40 to-transparent rounded-full blur-3xl" />
-      </div>
+  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior }); }, []);
 
+  return (
+    <div className="min-h-screen flex flex-col bg-transparent text-foreground selection:bg-primary/20">
+      <GradientBg />
+      <div className="fixed inset-0 pointer-events-none z-50 mix-blend-multiply opacity-[0.03]" style={{ backgroundImage: 'url("https://grainy-gradients.vercel.app/noise.svg")' }} />
       <Nav />
 
       <main className="relative z-10 flex-1 pt-28 pb-24 max-w-[1400px] mx-auto w-full px-6 md:px-12 lg:px-24">
         <FadeIn>
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center gap-3 mb-4 pt-8">
             <span className="h-px w-8 bg-primary" />
             <span className="text-primary font-medium tracking-wide uppercase text-sm">Get to Know Me</span>
           </div>
@@ -27,7 +26,7 @@ export default function About() {
         {/* Why PM + Personal */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
           <FadeIn delay={0.1}>
-            <div className="p-10 rounded-3xl bg-gradient-to-br from-violet-50 via-purple-50/60 to-background border border-violet-200/60 h-full">
+            <div className="p-10 rounded-3xl bg-white/60 backdrop-blur-sm border border-violet-200/70 h-full">
               <div className="flex items-center gap-3 mb-6">
                 <span className="h-px w-6 bg-violet-500" />
                 <span className="text-violet-600 font-semibold text-sm uppercase tracking-wider">My Why</span>
@@ -41,7 +40,7 @@ export default function About() {
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            <div className="p-10 rounded-3xl bg-gradient-to-br from-amber-50 via-orange-50/60 to-background border border-amber-200/60 h-full">
+            <div className="p-10 rounded-3xl bg-white/60 backdrop-blur-sm border border-amber-200/70 h-full">
               <div className="flex items-center gap-3 mb-6">
                 <span className="h-px w-6 bg-amber-500" />
                 <span className="text-amber-700 font-semibold text-sm uppercase tracking-wider">Outside Work</span>
@@ -63,23 +62,23 @@ export default function About() {
               Toolkit
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 rounded-2xl border border-border bg-card">
+              <div className="p-6 rounded-2xl border border-border bg-white/70 backdrop-blur-sm">
                 <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">Languages</h4>
                 <div className="flex flex-wrap gap-2">
                   {["Java", "Python", "C++", "JavaScript", "HTML/CSS", "React"].map(skill => (
-                    <span key={skill} className="px-3 py-1.5 bg-muted rounded-lg text-sm font-medium border border-border/50 hover:border-primary/30 transition-colors">{skill}</span>
+                    <span key={skill} className="px-3 py-1.5 bg-muted rounded-lg text-sm font-medium border border-border/50">{skill}</span>
                   ))}
                 </div>
               </div>
-              <div className="p-6 rounded-2xl border border-border bg-card">
+              <div className="p-6 rounded-2xl border border-border bg-white/70 backdrop-blur-sm">
                 <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">Tools &amp; Design</h4>
                 <div className="flex flex-wrap gap-2">
                   {["Git", "GitHub", "Jira", "Figma", "Miro", "Sketch", "Adobe XD", "VS Code"].map(skill => (
-                    <span key={skill} className="px-3 py-1.5 bg-muted rounded-lg text-sm font-medium border border-border/50 hover:border-primary/30 transition-colors">{skill}</span>
+                    <span key={skill} className="px-3 py-1.5 bg-muted rounded-lg text-sm font-medium border border-border/50">{skill}</span>
                   ))}
                 </div>
               </div>
-              <div className="p-6 rounded-2xl border border-amber-200/60 bg-gradient-to-br from-amber-50/60 to-card">
+              <div className="p-6 rounded-2xl border border-amber-200/60 bg-amber-50/60 backdrop-blur-sm">
                 <h4 className="text-sm font-semibold text-amber-700 uppercase tracking-wider mb-4">AI &amp; LLMs</h4>
                 <div className="flex flex-wrap gap-2">
                   {["OpenAI API", "Claude API", "Google Gemini API", "AWS Bedrock", "Prompt Engineering", "LLM Evaluation"].map(skill => (
@@ -94,7 +93,7 @@ export default function About() {
         {/* Off the Clock */}
         <FadeIn delay={0.4}>
           <h2 className="font-serif text-3xl mb-8 flex items-center gap-3">
-            <span className="w-2 h-8 rounded-full bg-violet-500 inline-block" />
+            <span className="w-2 h-8 rounded-full bg-violet-400 inline-block" />
             Off the Clock
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

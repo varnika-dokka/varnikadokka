@@ -1,16 +1,21 @@
+import { useEffect } from "react";
 import { FadeIn } from "@/components/animations";
 import Nav from "@/components/Nav";
 import PageFooter from "@/components/PageFooter";
+import GradientBg from "@/components/GradientBg";
 
 export default function Background() {
+  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior }); }, []);
+
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground selection:bg-primary/20">
+    <div className="min-h-screen flex flex-col bg-transparent text-foreground selection:bg-primary/20">
+      <GradientBg />
       <div className="fixed inset-0 pointer-events-none z-50 mix-blend-multiply opacity-[0.03]" style={{ backgroundImage: 'url("https://grainy-gradients.vercel.app/noise.svg")' }} />
       <Nav />
 
       <main className="flex-1 pt-28 pb-24 max-w-[1400px] mx-auto w-full px-6 md:px-12 lg:px-24">
         <FadeIn>
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center gap-3 mb-4 pt-8">
             <span className="h-px w-8 bg-primary" />
             <span className="text-primary font-medium tracking-wide uppercase text-sm">Education &amp; Leadership</span>
           </div>
@@ -21,11 +26,11 @@ export default function Background() {
           {/* Education */}
           <FadeIn delay={0.1}>
             <h2 className="font-serif text-3xl mb-8 flex items-center gap-3">
-              <span className="w-2 h-8 rounded-full bg-emerald-500 inline-block" />
+              <span className="w-2 h-8 rounded-full bg-emerald-400 inline-block" />
               Education
             </h2>
             <div className="space-y-5">
-              <div className="border border-border p-8 rounded-2xl bg-card hover:border-emerald-300 hover:shadow-md transition-all group">
+              <div className="border border-border p-8 rounded-2xl bg-white/70 backdrop-blur-sm hover:border-emerald-300 hover:shadow-md transition-all">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-6">
                   <div>
                     <h3 className="text-xl font-semibold">University of Washington, Seattle</h3>
@@ -43,7 +48,7 @@ export default function Background() {
                 </div>
               </div>
 
-              <div className="border border-border p-8 rounded-2xl bg-card hover:border-emerald-300 hover:shadow-md transition-all group">
+              <div className="border border-border p-8 rounded-2xl bg-white/70 backdrop-blur-sm hover:border-emerald-300 hover:shadow-md transition-all">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-4">
                   <div>
                     <h3 className="text-xl font-semibold">Skyline High School</h3>
@@ -72,24 +77,24 @@ export default function Background() {
                   org: "Issaquah Youth Advisory Board",
                   date: "Sep 2019 - Jun 2026",
                   desc: "Served six years on the board - five as Teen Advocacy Co-Chair, then Board Co-Chair. Planned city-wide events including Mental Health Conferences, debates with the Mayor, and the Issy Kids Triathlon, collaborating with city officials and community organizations to create leadership opportunities for youth.",
-                  color: "border-l-primary bg-primary/5",
+                  accent: "border-l-primary bg-white/60",
                 },
                 {
                   role: "Youth Member",
                   org: "Issaquah Equity Board",
                   date: "Sep 2023 - Present",
                   desc: "Appointed as one of two Regular Youth Members representing youth perspectives. Advise the Mayor, City Council, and City departments on equity, accessibility, and community engagement - reviewing policies and providing recommendations that support Issaquah's diverse communities.",
-                  color: "border-l-amber-500 bg-amber-50/60",
+                  accent: "border-l-amber-400 bg-amber-50/60",
                 },
                 {
                   role: "Java & Statistics Tutor",
                   org: "GoPeer",
                   date: "Aug 2024 - Jun 2026",
                   desc: "Tutored students in Java and statistics through individualized lessons, adapting to different learning styles and skill levels. Broke down technical concepts into approachable explanations to help students build confidence in programming and quantitative reasoning.",
-                  color: "border-l-violet-500 bg-violet-50/60",
+                  accent: "border-l-violet-400 bg-violet-50/60",
                 },
-              ].map(({ role, org, date, desc, color }) => (
-                <div key={role} className={`border-l-4 p-6 rounded-r-2xl rounded-bl-2xl ${color} hover:shadow-md transition-all`}>
+              ].map(({ role, org, date, desc, accent }) => (
+                <div key={role} className={`border-l-4 p-6 rounded-r-2xl rounded-bl-2xl ${accent} backdrop-blur-sm hover:shadow-md transition-all`}>
                   <h4 className="font-semibold text-base mb-1">{role}</h4>
                   <p className="text-primary text-sm font-medium mb-1">{org}</p>
                   <p className="text-muted-foreground text-xs mb-3">{date}</p>
@@ -102,9 +107,9 @@ export default function Background() {
 
         {/* Activities */}
         <FadeIn delay={0.3}>
-          <div className="mt-16 border border-border rounded-2xl bg-gradient-to-br from-card to-muted/30 p-8">
+          <div className="mt-16 border border-border rounded-2xl bg-white/70 backdrop-blur-sm p-8">
             <h2 className="font-serif text-2xl mb-6 flex items-center gap-3">
-              <span className="w-2 h-6 rounded-full bg-violet-500 inline-block" />
+              <span className="w-2 h-6 rounded-full bg-violet-400 inline-block" />
               Activities
             </h2>
             <div className="flex flex-wrap gap-3">
@@ -115,7 +120,7 @@ export default function Background() {
                 "Campus Philharmonia Orchestra - Violin",
                 "Society of Women Engineers - Director of Corporate Relations",
               ].map((activity) => (
-                <span key={activity} className="px-4 py-2.5 bg-background rounded-xl text-sm font-medium border border-border/60 text-foreground/80 hover:border-primary/40 hover:bg-primary/5 transition-colors">
+                <span key={activity} className="px-4 py-2.5 bg-white/80 rounded-xl text-sm font-medium border border-border/60 text-foreground/80 hover:border-primary/40 hover:bg-primary/5 transition-colors">
                   {activity}
                 </span>
               ))}

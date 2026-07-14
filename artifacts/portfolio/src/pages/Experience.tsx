@@ -1,17 +1,22 @@
+import { useEffect } from "react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/animations";
 import { ExperienceCard } from "@/components/portfolio-helpers";
 import Nav from "@/components/Nav";
 import PageFooter from "@/components/PageFooter";
+import GradientBg from "@/components/GradientBg";
 
 export default function Experience() {
+  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior }); }, []);
+
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground selection:bg-primary/20">
+    <div className="min-h-screen flex flex-col bg-transparent text-foreground selection:bg-primary/20">
+      <GradientBg />
       <div className="fixed inset-0 pointer-events-none z-50 mix-blend-multiply opacity-[0.03]" style={{ backgroundImage: 'url("https://grainy-gradients.vercel.app/noise.svg")' }} />
       <Nav />
 
       <main className="flex-1 pt-28 px-6 md:px-12 lg:px-24 pb-24 max-w-[1400px] mx-auto w-full">
         <FadeIn>
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center gap-3 mb-4 pt-8">
             <span className="h-px w-8 bg-primary" />
             <span className="text-primary font-medium tracking-wide uppercase text-sm">Where I've Been</span>
           </div>
