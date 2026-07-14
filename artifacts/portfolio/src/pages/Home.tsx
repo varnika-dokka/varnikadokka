@@ -275,7 +275,7 @@ export default function Home() {
               <h3 className="font-serif text-2xl mb-6">Activities</h3>
               <div className="flex flex-wrap gap-3">
                 {[
-                  "Incoming INFO 200 Teaching Assistant",
+                  "Informatics Peer Advisor",
                   "UW Product Management Club",
                   "Robinson Center Peer Mentor",
                   "Campus Philharmonia Orchestra - Violin",
