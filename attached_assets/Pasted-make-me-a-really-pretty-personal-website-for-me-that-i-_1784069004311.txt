@@ -1,0 +1,269 @@
+make me a really pretty personal website for me that i can put on resume for internships like pm, swe etc. i want to ahve a github repo of it as well that i can add to my profile. here is my resume VARNIKA V. DOKKA
+Product Manager | AI Product Builder
+Sammamish, WA • 425-395-6061 • varnnikadokka@outlook.com • linkedin.com/in/varnikadokka•  github.com/varnika-dokka
+EDUCATION
+University of Washington, Seattle                                                                                                                                                               Expected June 2028
+Bachelor of Science in Informatics & Bachelor of Science in Electrical & Computer Engineering (double degree)
+GPA: 3.6 | Dean's List 2024-2026 | UW Academy (Robinson Center) - Early university admit after 10th grade
+Relevant coursework: Product and Information Systems Management, Data Structures and Algorithms, Foundational Skills for Data Science, Client-Side Development, Programming for Signal Processing
+SKILLS
+Languages: Java, Python, C++, JavaScript, HTML/CSS, React
+Tools: Git, GitHub, Jira, Figma, Miro, Sketch, Adobe XD, Visual Studio Code, Slack
+LLMs & AI APIs: OpenAI API, Claude API, Google Gemini API, AWS Bedrock (Prompt Engineering, LLM Evaluation)
+PRODUCT EXPERIENCE
+Cache (AI-Powered Screenshot Organizer) - Co-Founder & Product Manager                                                                                   May 2026 - Present
+•	Interviewed 25 University of Washington students to validate the need for an AI-powered screenshot organization tool, then defined the MVP (upload, AI tagging, and natural-language search) and core user flow with a technical co-founder.
+•	Conducted competitive analysis of products including Google Photos, Apple Photos, MyMind, and Notion to identify product opportunities, then selected OpenAI and Claude APIs over custom model training to build and deploy a working MVP in under one month.
+•	Implemented row-level security to prioritize user trust and iterated on the product using feedback from 150+ active beta users after launch, defining event analytics to measure activation and retention.
+NeuroLearn Web Platform - Product Lead                                                                                                                                                Jan 2026 - Mar 2026
+•	Identified a gap in accessible neuroscience education and defined the MVP for a gamified web platform, reducing feature scope by 40% to deliver within a 10-week timeline.
+•	Led a 4-person cross-functional team to coordinate front-end development, data integration, and GitHub workflows, resulting in a 30% increase in student engagement.
+UW Informatics - Research Assistant                                                                                                                                                     Sep 2025 - March 2026
+•	Researched user needs and defined product requirements for a public dashboard analyzing housing and climate risk data across Washington, translating complex datasets into an accessible dashboard for residents and policymakers.
+•	Presented research findings and design decisions at the UW Research Symposium, using user testing insights to prioritize intuitive filtering over raw data completeness.
+PROFESSIONAL EXPERIENCE
+C2S Technologies - Software Engineer Intern                                                                                                             	                                  Jun 2026 - Present
+•	Build an AI-powered application that leverages LLM workflows to transform product ideas into user stories, acceptance criteria, feature roadmaps, and Jira tasks.
+•	Develop AI workflows using OpenAI-compatible APIs to automate requirements analysis, structured documentation generation, and product planning tasks.
+•	Partner with engineers and mentors to iterate on application features, incorporate stakeholder feedback, and deliver biweekly product demonstrations to industry professionals.
+UW Information School - Informatics Peer Advisor                                                                                                                                   June 2026 - Present 
+•	Advise prospective and current Informatics students on academic planning, campus resources, and career exploration through one-on-one advising.
+•	Represent the Information School at admissions events, orientations, and student panels while collaborating with faculty and staff to strengthen student engagement initiatives.
+Society of Women Engineers, UW - Director of Corporate Relations                                                                                                     Mar 2026 - Present
+•	Lead recruiter outreach and corporate engagement as Co-Director of a 5-member Corporate Events committee, organizing networking events, workshops, and recruiting opportunities for engineering students.
+•	Coordinate sponsor outreach, speaker logistics, and event execution with industry partners including Microsoft, Boeing, Accenture, and Texas Instruments.
+LEADERSHIP
+Issaquah Youth Advisory Board + Equity Board - Co-Chair & Youth Representative                                                                           Sep 2019 - Present
+•	Advise the Mayor and City Council on youth and equity initiatives, representing student perspectives and reviewing city policies affecting diverse communities.
+•	Founded the NeuroArt Contest in support of Seattle Children's Guild and presented on mental health, equity, and youth leadership at citywide conferences.
+ACTIVITIES
+Incoming INFO 200 (Intellectual Foundations of Informatics) Teaching Assistant | UW Product Management Club | Robinson Center Peer Mentor
+and my linkedin for extra info Varnika Dokka
+SWE Intern @ C2S Tech | ECE & INFO @ UW
+Sammamish, Washington, United States
+·
+Contact info
+￼
+University of Washington Information School
+￼
+University of Washington College of Engineering
+500+ connections
+Open to
+Add section
+Enhance profile
+
+Analytics
+
+Private to you
+
+75 profile views
+Discover who’s viewed your profile.
+
+0 post impressions
+Start a post to increase engagement.
+Past 7 days
+
+58 search appearances
+See how often you appear in search results.
+
+
+Show all
+About
+
+Informatics & Electrical and Computer Engineering student at the University of Washington. Passionate about building technology that solves real user problems. Build AI-powered products and collaborate on cross-functional software projects, with a focus on user research, product strategy, and product development.
+
+Top skills
+Product Management • Software Development • Java • Git • User Research
+
+Featured
+
+
+* 		Link 
+* ￼
+* 		 Cache - Stop scrolling. Start searching. https://cache-screenshots.vercel.app Explore Cache, an AI-powered web application that transforms screenshots into a searchable personal knowledge library using natural language search.  Link 
+* ￼
+* 		 Cache - GitHub Repository GitHub Source code for Cache, built with Next.js, React, TypeScript, Tailwind CSS, and Supabase.  Link 
+* ￼
+		 AI, Robotics & Automation Final Project Presentation Google Docs Final project presentation demonstrating the end-to-end development of a smart animal crossing detection system. Highlights the problem, solution design, hardware implementation, testing, and collaboration throughout the project. 
+Activity
+709 followers
+Create a post
+
+Varnika Dokka commented on a post
+•
+1d
+class
+
+Varnika Dokka commented on a post
+•
+1w
+vdokka@uw.edu
+
+Varnika Dokka commented on a post
+•
+4w
+vdokka@uw.edu
+
+
+Show all
+Experience
+
+
+￼
+Informatics Peer Advisor
+University of Washington Information School · Full-time
+Jun 2026 - Present · 2 mos
+Seattle, Washington, United States
+• Mentor prospective and current Informatics students by providing guidance on academics, campus resources, and career exploration. • Represent the Information School at admissions events, orientations, and outreach programs while fostering an inclusive student community. • Collaborate with faculty and staff to improve student engagement and support initiatives across the Informatics program.
+… more
+ Academic Advising and Student Engagement
+
+￼
+Society of Women Engineers
+1 yr 11 mos
+Seattle, Washington, United States
+* 		  Director of Corporate Relations - Corporate Events Mar 2026 - Present · 5 mos • Build and maintain relationships with industry partners to support networking events, workshops, and professional development opportunities for members. • Coordinate corporate outreach, sponsorship efforts, and employer engagement initiatives alongside executive board members. • Plan career-focused events that connect students with recruiters and engineering professionals.… more   Project Management, Partnership Development and +3 skills   Middle School Outreach Committee Member Jun 2025 - Mar 2026 · 10 mos • Supported STEM outreach events that introduced middle school students to engineering and technology. • Collaborated with fellow Society of Women Engineers members to organize hands-on outreach activities and represent SWE at events, including the annual Dawg Daze booth at the University of Washington. • Engaged with students and families during outreach events, answering questions about engineering and creating a welcoming, interactive experience.… more   Community Outreach and Event Coordination   SWE General Member Sep 2024 - Jun 2025 · 10 mos  User Research
+
+￼
+Software Engineer Intern
+C2S Technologies, Inc. · Internship
+Jun 2026 - Present · 2 mos
+Bellevue, Washington, United States
+ Software Development, Git and +2 skills
+
+￼
+City of Issaquah
+6 yrs 11 mos
+* 		  Issaquah Equity Board Youth Member Sep 2023 - Present · 2 yrs 11 mos • Advise the Mayor, City Council, and City departments on initiatives related to equity, accessibility, and community engagement. • Served as an Alternate Youth Member before being appointed as one of two Regular Youth Members representing youth perspectives. • Collaborate with board members to review policies and provide recommendations that support Issaquah's diverse communities.… more   Leadership, Public Policy and +1 skill   Issaquah Youth Advisory Board (IYAB) Co-Chair Sep 2019 - Jun 2026 · 6 yrs 10 mos • Planned and led community events including Mental Health Conferences, Environmental Conferences, debates with the Mayor, Issy Kids Triathlon, and other youth engagement initiatives. • Served on the board for six years, including five years as Teen Advocacy Co-Chair before being selected as Board Co-Chair. • Collaborated with city officials, community organizations, and student leaders to create leadership and service opportunities for youth throughout the Issaquah School District.… more   Leadership, Project Management and +2 skills
+
+￼
+Java & Statistics Tutor
+GoPeer · Contract
+Aug 2024 - Jun 2026 · 1 yr 11 mos
+Virtual · Remote
+• Tutor students in Java programming and statistics through individualized lessons focused on problem solving and conceptual understanding. • Adapt teaching strategies to different learning styles while tracking student progress and improving academic performance. • Break down technical concepts into approachable explanations, helping students build confidence in programming and quantitative reasoning.
+… more
+ Java, Tutoring and +2 skills
+
+
+Show all
+￼
+Java & Statistics Tutor
+GoPeer · Contract
+Aug 2024 - Jun 2026 · 1 yr 11 mos
+Virtual · Remote
+• Tutor students in Java programming and statistics through individualized lessons focused on problem solving and conceptual understanding.
+• Adapt teaching strategies to different learning styles while tracking student progress and improving academic performance.
+• Break down technical concepts into approachable explanations, helping students build confidence in programming and quantitative reasoning.
+ Java, Tutoring and +2 skills
+
+
+￼
+Study Abroad Engineering - Singapore
+University of Washington
+Aug 2025 - Sep 2025 · 2 mos
+Singapore
+• Selected as a participant for the Early Fall "Controlling the Future: Essentials of AI, Robotics, and Automation" Study Abroad Program in Singapore.
+• Developed and presented a live animal-crossing detection system using Arduino, sensors, and C++ as part of a collaborative engineering project.
+• Explored cultural sites and collaborated with engineering students from Ngee Ann Polytechnic (NP) and National University of Singapore (NUS).
+￼
+Smart Animal Crossing Detection System
+Final project presentation demonstrating the end-to-end development of a smart animal crossing detection system. Highlights the problem, solution design, hardware implementation, testing, and collaboration throughout the project.
+ C++, Arduino and +3 skills
+
+
+￼
+SAMPADA Carnatic Singing Senior Certificate & Diploma Student
+Silicon Andhra
+May 2019 - Aug 2025 · 6 yrs 4 mos
+• SAMPADA offers a certificate program for students learning Indian Classical Music and Dance across the United States.
+• Earned a Senior Certificate by completing four years of Carnatic vocal training, mastering classical compositions, music theory, and performance through written and practical examinations.
+• Proctored annual SAMPADA certification examinations hosted at the University of Washington for the past three years, ensuring a fair and organized testing environment for students of all ages.
+
+
+￼
+Johns Hopkins Center for Talented Youth
+The Johns Hopkins University
+Jul 2020 - Jul 2022 · 2 yrs 1 mo
+• Student in Johns Hopkins Center for Talented Youth
+• Took Chinese I and Chinese II with Johns Hopkins and received an A+ in both courses.
+Education
+
+
+￼
+University of Washington College of Engineering
+Bachelor of Science - BS, Electrical and Computer Engineering
+Sep 2024 – Jun 2028
+Focus in Computing/Embedded Systems
+
+
+￼
+University of Washington Information School
+Bachelor of Science - BS, Informatics
+Sep 2024 – Jun 2028
+Activities and Societies:  • Informatics Peer Advisor • Society of Women Engineers (SWE) Corporate Relations Director • Product Management Club • Campus Philharmonia Orchestra (CPO) Violin Player • Study Abroad - Essentials of AI, Robotics, and Automation (Singapore) 2025
+… more
+
+
+￼
+Skyline High School
+2022 – 2024
+Grade: 9th-10th
+Class of 2026 UW Academy Early Entrance Activities: Robotics, DECA, Chamber Orchestra, JSA, etc.
+… more
+Skills: Project Management, Business Planning
+Projects
+
+
+Cache
+May 2026 – Jul 2026
+Cache is an AI-powered web application that helps users organize and search the screenshots they save every day. Instead of endlessly scrolling through a camera roll, users can quickly find recipes, travel plans, notes, receipts, and other saved content using natural language search. By combining AI-powered search with automatic organization, Cache transforms scattered screenshots into a searchable personal knowledge library.
+
+Built the application using Next.js, React, TypeScript, Tailwind CSS, and Supabase, implementing secure authentication, cloud storage, and responsive user interfaces. 
+
+Designed responsive user interfaces and contributed to feature development throughout the product lifecycle.
+ User Research, Next.js and +7 skills
+￼
+￼
+Other contributors
+Volunteering
+
+
+￼
+Peer Mentor
+UW Robinson Center For Young Scholars
+Sep 2025 - Jun 2026 · 10 mos
+• Selected as a peer mentor for first-year Robinson Center students. • Mentored UW Academy and Transition School students by providing guidance and support during their transition to university.
+… more
+
+
+￼
+Dance Teacher
+From Within Academy
+Sep 2023 - Jan 2025 · 1 yr 5 mos
+• Taught Bharatanatyam, a South Indian classical dance form, to students in Sammamish and virtually in India. • After completing a four-hour Arangetram (graduation performance), instructed students in hand gestures, footwork, facial expressions, posture, and choreography. • Adapted lessons for students of different ages and experience levels while fostering confidence and artistic growth.
+… more
+
+
+￼
+Counselor-In-Training (CIT)
+City of Issaquah
+Aug 2022 - Aug 2024 · 2 yrs 1 mo
+• Assisted camp counselors in planning and facilitating activities for elementary and middle school campers across three summer sessions. • Helped create a safe, engaging, and inclusive environm
+Honors & awards
+
+Dean's List
+Issued by University of Washington · Jun 2026
+Awarded Dean's List recognition for academic excellence across multiple academic quarters at the University of Washington (2024-2026).
+
+
+DECA Financial Operations Research & Hospitality and Tourism Professional Selling State Qualifier
+· Participant of the Skyline High School DECA Chapter.
+· Wrote a 20 page research paper in the Financial Operations Research Division on the introduction of AI within banking systems in Home Street Bank, which got selected as a State Qualifier in 2023.
+· Participated in the Hospitality and Tourism Professional Selling event individually and placed 6th in the Area 4 Division, qualifying for state in 2024.
+
+
+Public Forum and Lincoln Douglas Debater
+· 2023 Seattle University Tournaments, 2nd Place winner in Public Forum Division.
+· 2024 NorthShore Foundation Regional Public Speaker at Seattle Washington Chapter.
+· 2024 Junior State of America (JSA) Public Speaker.
