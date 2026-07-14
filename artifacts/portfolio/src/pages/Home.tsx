@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/animations";
 import cacheImg from "@assets/cache-screenshot.png";
+import neuroLearnImg from "@assets/neurolearn-screenshot.png";
 
 export default function Home() {
   return (
@@ -105,38 +106,12 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7">
             <FadeIn delay={0.1}>
-              <div className="relative group rounded-2xl overflow-hidden shadow-2xl border border-border/50 bg-muted aspect-[16/10] flex items-center justify-center">
-                <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-emerald-500/10"></div>
-                {/* NeuroLearn app mockup */}
-                <div className="relative w-[85%] h-[85%] bg-card rounded-xl shadow-xl overflow-hidden flex flex-col border border-border">
-                  <div className="h-10 border-b border-border bg-muted/50 flex items-center px-4 gap-2">
-                    <div className="w-3 h-3 rounded-full bg-destructive/60"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-500/60"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-500/60"></div>
-                    <span className="ml-4 text-muted-foreground/50 text-xs">NeuroLearn - Level 3: Memory &amp; Learning</span>
-                  </div>
-                  <div className="flex flex-1 overflow-hidden">
-                    <div className="w-1/3 border-r border-border p-4 flex flex-col gap-3">
-                      {["Neurons", "Synapses", "Memory", "Cognition"].map((t, i) => (
-                        <div key={t} className={`px-3 py-2 rounded-lg text-xs font-medium ${i === 2 ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"}`}>{t}</div>
-                      ))}
-                    </div>
-                    <div className="flex-1 p-4 flex flex-col gap-3">
-                      <div className="text-xs font-semibold text-foreground">Module 3: How Memory Forms</div>
-                      <div className="flex gap-1">
-                        {[1,2,3,4,5].map(i => (
-                          <div key={i} className={`h-1.5 flex-1 rounded-full ${i <= 3 ? "bg-primary" : "bg-muted"}`}></div>
-                        ))}
-                      </div>
-                      <div className="flex-1 bg-muted rounded-lg flex items-center justify-center">
-                        <div className="text-xs text-muted-foreground/60 text-center">Interactive diagram</div>
-                      </div>
-                      <div className="h-7 bg-primary/10 rounded-lg border border-primary/20 flex items-center px-3">
-                        <span className="text-xs text-primary font-medium">XP +50 - Lesson complete!</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className="relative group rounded-2xl overflow-hidden shadow-2xl border border-border/50">
+                <img
+                  src={neuroLearnImg}
+                  alt="NeuroLearn - gamified neuroscience education platform"
+                  className="w-full h-auto object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
+                />
               </div>
             </FadeIn>
           </div>
@@ -157,6 +132,12 @@ export default function Home() {
                 <ListItem>Led a 4-person cross-functional team across front-end, data integration, and GitHub workflows</ListItem>
                 <ListItem>Resulted in a 30% increase in student engagement</ListItem>
               </ul>
+
+              <div className="flex flex-wrap gap-4">
+                <a href="https://neurolearn-draft2.web.app/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-violet-600 text-white font-medium transition-all hover:bg-violet-700 hover:shadow-lg hover:-translate-y-0.5">
+                  View Live Site <ArrowUpRight className="w-4 h-4" />
+                </a>
+              </div>
             </FadeIn>
           </div>
         </div>
@@ -219,6 +200,12 @@ export default function Home() {
                   date="Sep 2025 - Mar 2026"
                   description="Defined product requirements for a public dashboard analyzing housing and climate risk data across Washington, translating complex datasets into an accessible UI for residents and policymakers. Presented findings at the UW Research Symposium."
                 />
+                <ExperienceCard
+                  role="Product Lead"
+                  company="NeuroLearn"
+                  date="Sep 2024 - Dec 2024"
+                  description="Led product vision and execution for a gamified neuroscience education platform. Scoped the MVP, cut scope by 40% to hit a 10-week deadline, and coordinated a 4-person cross-functional team across front-end, data integration, and GitHub workflows."
+                />
               </div>
             </StaggerItem>
           </StaggerContainer>
@@ -264,19 +251,19 @@ export default function Home() {
                 <div className="border border-border p-6 rounded-2xl bg-background hover:border-primary/20 transition-colors">
                   <h4 className="font-semibold text-base mb-1">Co-Chair</h4>
                   <p className="text-primary text-sm font-medium mb-3">Issaquah Youth Advisory Board - Sep 2019 to Jun 2026</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">Planned and led community events including Mental Health Conferences, Environmental Conferences, debates with the Mayor, Issy Kids Triathlon, and other youth engagement initiatives. Served on the board for six years, including five years as Teen Advocacy Co-Chair before being selected as Board Co-Chair. Collaborated with city officials, community organizations, and student leaders to create leadership and service opportunities for youth throughout the Issaquah School District.</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Served six years on the board - five as Teen Advocacy Co-Chair, then Board Co-Chair. Planned city-wide events including Mental Health Conferences, debates with the Mayor, and the Issy Kids Triathlon, collaborating with city officials and community organizations to create leadership opportunities for youth.</p>
                 </div>
 
                 <div className="border border-border p-6 rounded-2xl bg-background hover:border-primary/20 transition-colors">
                   <h4 className="font-semibold text-base mb-1">Youth Member</h4>
                   <p className="text-primary text-sm font-medium mb-3">Issaquah Equity Board - Sep 2023 to Present</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">Advise the Mayor, City Council, and City departments on initiatives related to equity, accessibility, and community engagement. Served as an Alternate Youth Member before being appointed as one of two Regular Youth Members representing youth perspectives. Collaborate with board members to review policies and provide recommendations that support Issaquah's diverse communities.</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Appointed as one of two Regular Youth Members representing youth perspectives. Advise the Mayor, City Council, and City departments on equity, accessibility, and community engagement - reviewing policies and providing recommendations that support Issaquah's diverse communities.</p>
                 </div>
 
                 <div className="border border-border p-6 rounded-2xl bg-background hover:border-primary/20 transition-colors">
                   <h4 className="font-semibold text-base mb-1">Java &amp; Statistics Tutor</h4>
                   <p className="text-primary text-sm font-medium mb-3">GoPeer - Aug 2024 to Jun 2026</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">Tutored students in Java programming and statistics through individualized lessons focused on problem solving and conceptual understanding. Adapted teaching strategies to different learning styles while tracking student progress. Broke down technical concepts into approachable explanations, helping students build confidence in programming and quantitative reasoning.</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Tutored students in Java and statistics through individualized lessons, adapting to different learning styles and skill levels. Broke down technical concepts into approachable explanations to help students build confidence in programming and quantitative reasoning.</p>
                 </div>
               </div>
             </FadeIn>
@@ -304,8 +291,41 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Skills & Beyond the Screen */}
+      {/* Why PM + Outside of Work */}
       <section className="px-6 md:px-12 lg:px-24 py-24 max-w-[1400px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <FadeIn delay={0.1}>
+            <div className="p-10 rounded-3xl bg-primary/5 border border-primary/15 h-full">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="h-px w-6 bg-primary"></span>
+                <span className="text-primary font-semibold text-sm uppercase tracking-wider">My Why</span>
+              </div>
+              <h3 className="font-serif text-3xl md:text-4xl mb-6 text-foreground">Why Product Management</h3>
+              <div className="text-muted-foreground leading-relaxed space-y-4 text-base">
+                <p>Before I had the title, I was already doing the work. Leading city advisory boards, running community events, advocating for equity - every role required translating messy, real-world problems into clear action across different people and perspectives. Product management just gave it a name.</p>
+                <p>What draws me in is the moment ambiguity starts to resolve. Going from "there's a problem here" to 25 user interviews, a defined MVP, and 150 beta users - that arc is where I feel most alive. PM is where I get to combine what I care about most: understanding people, thinking in systems, and actually shipping something.</p>
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={0.2}>
+            <div className="p-10 rounded-3xl bg-muted/50 border border-border h-full">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="h-px w-6 bg-foreground/30"></span>
+                <span className="text-foreground/50 font-semibold text-sm uppercase tracking-wider">Outside Work</span>
+              </div>
+              <h3 className="font-serif text-3xl md:text-4xl mb-6 text-foreground">A Little About Me</h3>
+              <div className="text-muted-foreground leading-relaxed space-y-4 text-base">
+                <p>I play violin in UW's Campus Philharmonia and spent six years studying Carnatic vocals. I've also taught Bharatanatyam - a South Indian classical dance form - which has taught me more about patience and precision than almost anything else I've done.</p>
+                <p>I love traveling (studying abroad in Singapore was a highlight), staying active, and mentoring students coming up through programs like Robinson Center. Equity and inclusion aren't just things I put on a resume - they're part of why I ended up on an advisory board at 14 and why I still show up for those spaces today.</p>
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* Skills & Off the Clock */}
+      <section className="px-6 md:px-12 lg:px-24 py-24 bg-card border-t border-border max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           <div className="lg:col-span-5">
             <FadeIn>
@@ -341,22 +361,22 @@ export default function Home() {
 
           <div className="lg:col-span-7">
             <FadeIn delay={0.2}>
-              <h2 className="font-serif text-4xl mb-8">Beyond the Screen</h2>
+              <h2 className="font-serif text-4xl mb-8">Off the Clock</h2>
               <div className="space-y-6">
                 <OtherCard
                   title="Study Abroad - Singapore"
                   subtitle="Essentials of AI, Robotics &amp; Automation (Aug - Sep 2025)"
-                  desc="Selected for UW's Early Fall study abroad program. Built a live animal crossing detection system using Arduino, sensors, and C++ as part of a collaborative engineering project. Explored cultural sites and collaborated with engineering students from Ngee Ann Polytechnic and the National University of Singapore."
+                  desc="Selected for UW's Early Fall program in Singapore. Built a live animal-crossing detection system using Arduino, sensors, and C++ as part of a collaborative engineering project. Explored the city and worked alongside students from Ngee Ann Polytechnic and NUS."
                 />
                 <OtherCard
                   title="Classical Indian Vocal Training"
                   subtitle="SAMPADA Carnatic Singing - Senior Certificate (May 2019 - Aug 2025)"
-                  desc="Completed six years of classical Indian vocal training, mastering compositions, music theory, and performance through written and practical examinations. Proctored annual SAMPADA certification examinations hosted at the University of Washington for three years."
+                  desc="Completed six years of classical Indian vocal training and earned a Senior Certificate through written and practical exams. Proctored annual SAMPADA certification exams hosted at the University of Washington for three years."
                 />
                 <OtherCard
                   title="Bharatanatyam Dance Teacher"
                   subtitle="From Within Academy (Sep 2023 - Jan 2025)"
-                  desc="Taught Bharatanatyam, a South Indian classical dance form, to students in Sammamish and virtually in India. After completing a four-hour Arangetram graduation performance, instructed students in hand gestures, footwork, facial expressions, posture, and choreography. Adapted lessons for students of different ages and experience levels while fostering confidence and artistic growth."
+                  desc="After completing a four-hour Arangetram graduation performance, taught Bharatanatyam to students in Sammamish and virtually in India. Covered hand gestures, footwork, facial expressions, and choreography while adapting to students of different ages and skill levels."
                 />
               </div>
             </FadeIn>
@@ -446,7 +466,7 @@ function ExperienceCard({ role, company, date, description }: { role: string; co
 
 function OtherCard({ title, subtitle, desc }: { title: string; subtitle: string; desc: string }) {
   return (
-    <div className="p-6 border border-border rounded-2xl bg-card hover:shadow-lg transition-shadow">
+    <div className="p-6 border border-border rounded-2xl bg-background hover:shadow-lg transition-shadow">
       <h4 className="font-semibold text-lg">{title}</h4>
       <p className="text-primary text-sm font-medium mt-1 mb-3" dangerouslySetInnerHTML={{ __html: subtitle }} />
       <p className="text-muted-foreground text-sm leading-relaxed">{desc}</p>
