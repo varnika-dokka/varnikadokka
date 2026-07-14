@@ -3,6 +3,7 @@ import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/animations";
 import cacheImg from "@assets/cache-screenshot.png";
 import neuroLearnImg from "@assets/neurolearn-screenshot.png";
+import headshot from "@assets/varnika-headshot.jpg";
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex flex-col justify-center px-6 md:px-12 lg:px-24 pt-24 pb-12 max-w-[1400px] mx-auto">
-        <div className="max-w-4xl">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16 max-w-6xl">
+        <div className="max-w-2xl flex-1">
           <FadeIn>
             <div className="flex items-center gap-3 mb-6">
               <span className="h-px w-8 bg-primary"></span>
@@ -50,6 +52,20 @@ export default function Home() {
               </div>
             </div>
           </FadeIn>
+        </div>
+
+        {/* Headshot */}
+        <FadeIn delay={0.3}>
+          <div className="hidden lg:block shrink-0">
+            <div className="w-72 h-72 xl:w-80 xl:h-80 rounded-3xl overflow-hidden shadow-2xl border border-border/30">
+              <img
+                src={headshot}
+                alt="Varnika V. Dokka"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+          </div>
+        </FadeIn>
         </div>
       </section>
 
