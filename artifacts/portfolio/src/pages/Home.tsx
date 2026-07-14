@@ -242,6 +242,16 @@ export default function Home() {
                   <p><strong className="text-foreground font-medium">Coursework:</strong> Product and Information Systems Management, Data Structures and Algorithms, Foundational Skills for Data Science, Client-Side Development, Programming for Signal Processing</p>
                 </div>
               </div>
+
+              <div className="group border border-border p-8 rounded-2xl bg-background hover:border-primary/30 transition-colors mt-5">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                  <div>
+                    <h4 className="text-xl font-semibold">Skyline High School</h4>
+                    <p className="text-primary font-medium mt-2">9th - 10th Grade</p>
+                  </div>
+                  <span className="text-sm font-medium bg-muted px-3 py-1 rounded-full whitespace-nowrap">2022 - 2024</span>
+                </div>
+              </div>
             </FadeIn>
 
             {/* Leadership */}
