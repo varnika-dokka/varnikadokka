@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { useLocation, Route, Switch, Router as WouterRouter } from 'wouter';
 import NotFound from '@/pages/not-found';
 import Home from '@/pages/Home';
-import Work from '@/pages/Work';
+import Projects from '@/pages/Projects';
 import Experience from '@/pages/Experience';
 import Background from '@/pages/Background';
 import About from '@/pages/About';
@@ -24,7 +24,7 @@ function Router() {
       <ScrollToTop />
       <Switch>
         <Route path="/" component={Home} />
-        <Route path="/work" component={Work} />
+        <Route path="/projects" component={Projects} />
         <Route path="/experience" component={Experience} />
         <Route path="/background" component={Background} />
         <Route path="/about" component={About} />

@@ -53,9 +53,9 @@ export default function Home() {
                   <Mail className="w-4 h-4" />
                   Get in touch
                 </a>
-                <Link href="/work">
+                <Link href="/projects">
                   <span className="flex items-center gap-2 border border-border px-6 py-3 rounded-full font-medium text-foreground/70 hover:text-foreground hover:border-foreground/40 transition-all cursor-pointer bg-white/60 backdrop-blur-sm">
-                    View my work →
+                    View my projects →
                   </span>
                 </Link>
                 <div className="flex items-center gap-3">
