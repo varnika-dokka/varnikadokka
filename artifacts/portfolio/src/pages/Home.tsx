@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/animations";
+import cacheImg from "@assets/cache-screenshot.png";
 
 export default function Home() {
   return (
     <main className="min-h-screen selection:bg-primary/20 bg-background text-foreground overflow-hidden">
-      {/* Abstract background noise/texture */}
+      {/* Abstract background texture */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.03] z-50 mix-blend-multiply" style={{ backgroundImage: 'url("https://grainy-gradients.vercel.app/noise.svg")' }}></div>
 
       {/* Hero Section */}
@@ -17,19 +18,19 @@ export default function Home() {
               <span className="text-primary font-medium tracking-wide uppercase text-sm">Portfolio</span>
             </div>
           </FadeIn>
-          
+
           <FadeIn delay={0.1}>
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.1] tracking-tight text-foreground mb-6">
               Varnika V. Dokka
             </h1>
           </FadeIn>
-          
+
           <FadeIn delay={0.2}>
             <h2 className="text-xl md:text-2xl lg:text-3xl font-medium text-foreground/80 leading-snug mb-10 max-w-3xl">
-              Product Manager <span className="text-primary/50 mx-2">&middot;</span> AI Product Builder <span className="text-primary/50 mx-2">&middot;</span> Informatics & ECE @ UW
+              Product Manager <span className="text-primary/50 mx-2">&middot;</span> AI Product Builder <span className="text-primary/50 mx-2">&middot;</span> Informatics &amp; Electrical and Computer Engineering @ UW
             </h2>
           </FadeIn>
-          
+
           <FadeIn delay={0.3}>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-12">
               Passionate about building technology that solves real user problems. Builds AI-powered products and collaborates on cross-functional software projects, with a focus on user research, product strategy, and product development.
@@ -51,31 +52,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Project */}
+      {/* Featured Work */}
       <section className="px-6 md:px-12 lg:px-24 py-24 bg-card max-w-[1400px] mx-auto rounded-t-[3rem]">
         <FadeIn>
-          <div className="flex items-baseline justify-between mb-12 border-b border-border pb-6">
+          <div className="flex items-baseline justify-between mb-16 border-b border-border pb-6">
             <h2 className="font-serif text-4xl md:text-5xl text-foreground">Featured Work</h2>
-            <span className="text-muted-foreground text-sm uppercase tracking-widest hidden md:inline-block">Selected Project</span>
+            <span className="text-muted-foreground text-sm uppercase tracking-widest hidden md:inline-block">Selected Projects</span>
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        {/* Cache */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24">
           <div className="lg:col-span-5 order-2 lg:order-1">
             <FadeIn delay={0.1}>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-6 uppercase tracking-wider">
-                Co-Founder & Product Manager
+                Co-Founder &amp; Product Manager
               </div>
               <h3 className="font-serif text-4xl md:text-5xl mb-4 text-foreground">Cache</h3>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                An AI-powered web application that helps users organize and search their screenshots using natural language search.
+                An AI-powered web application that transforms screenshots into a searchable personal knowledge library using natural language search.
               </p>
-              
+
               <ul className="space-y-4 mb-10 text-foreground/80">
                 <ListItem>Interviewed 25 UW students to validate idea</ListItem>
-                <ListItem>Built and launched MVP in &lt;1 month with 150+ active beta users</ListItem>
-                <ListItem>Implemented row-level security & defined event analytics</ListItem>
-                <ListItem>Tech: Next.js, React, TypeScript, Tailwind, Supabase</ListItem>
+                <ListItem>Built and launched MVP in under 1 month with 150+ active beta users</ListItem>
+                <ListItem>Implemented row-level security and defined event analytics for activation and retention</ListItem>
+                <ListItem>Tech: Next.js, React, TypeScript, Tailwind CSS, Supabase</ListItem>
               </ul>
 
               <div className="flex flex-wrap gap-4">
@@ -85,34 +87,82 @@ export default function Home() {
               </div>
             </FadeIn>
           </div>
-          
+
           <div className="lg:col-span-7 order-1 lg:order-2">
-            <FadeIn delay={0.2} className="relative group rounded-2xl overflow-hidden shadow-2xl bg-muted aspect-[4/3] flex items-center justify-center border border-border/50">
-               {/* Visual abstraction for Cache project */}
-               <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-primary/10"></div>
-               <div className="relative w-3/4 h-3/4 bg-card rounded-xl shadow-xl overflow-hidden flex flex-col border border-border">
+            <FadeIn delay={0.2}>
+              <div className="relative group rounded-2xl overflow-hidden shadow-2xl border border-border/50">
+                <img
+                  src={cacheImg}
+                  alt="Cache app - stop scrolling, start searching"
+                  className="w-full h-auto object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
+                />
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+
+        {/* NeuroLearn */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-7">
+            <FadeIn delay={0.1}>
+              <div className="relative group rounded-2xl overflow-hidden shadow-2xl border border-border/50 bg-muted aspect-[16/10] flex items-center justify-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 via-transparent to-emerald-500/10"></div>
+                {/* NeuroLearn app mockup */}
+                <div className="relative w-[85%] h-[85%] bg-card rounded-xl shadow-xl overflow-hidden flex flex-col border border-border">
                   <div className="h-10 border-b border-border bg-muted/50 flex items-center px-4 gap-2">
                     <div className="w-3 h-3 rounded-full bg-destructive/60"></div>
                     <div className="w-3 h-3 rounded-full bg-yellow-500/60"></div>
                     <div className="w-3 h-3 rounded-full bg-green-500/60"></div>
+                    <span className="ml-4 text-muted-foreground/50 text-xs">NeuroLearn - Level 3: Memory &amp; Learning</span>
                   </div>
-                  <div className="flex-1 p-6 flex flex-col gap-4">
-                    <div className="h-10 w-full bg-muted rounded-md flex items-center px-4 border border-border">
-                      <span className="text-muted-foreground/50 text-sm">Search screenshots like "receipt from last week"</span>
-                    </div>
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 flex-1">
-                      {[1, 2, 3, 4, 5, 6].map((i) => (
-                        <div key={i} className="bg-muted rounded-md w-full h-full opacity-50"></div>
+                  <div className="flex flex-1 overflow-hidden">
+                    <div className="w-1/3 border-r border-border p-4 flex flex-col gap-3">
+                      {["Neurons", "Synapses", "Memory", "Cognition"].map((t, i) => (
+                        <div key={t} className={`px-3 py-2 rounded-lg text-xs font-medium ${i === 2 ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"}`}>{t}</div>
                       ))}
                     </div>
+                    <div className="flex-1 p-4 flex flex-col gap-3">
+                      <div className="text-xs font-semibold text-foreground">Module 3: How Memory Forms</div>
+                      <div className="flex gap-1">
+                        {[1,2,3,4,5].map(i => (
+                          <div key={i} className={`h-1.5 flex-1 rounded-full ${i <= 3 ? "bg-primary" : "bg-muted"}`}></div>
+                        ))}
+                      </div>
+                      <div className="flex-1 bg-muted rounded-lg flex items-center justify-center">
+                        <div className="text-xs text-muted-foreground/60 text-center">Interactive diagram</div>
+                      </div>
+                      <div className="h-7 bg-primary/10 rounded-lg border border-primary/20 flex items-center px-3">
+                        <span className="text-xs text-primary font-medium">XP +50 - Lesson complete!</span>
+                      </div>
+                    </div>
                   </div>
-               </div>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+
+          <div className="lg:col-span-5">
+            <FadeIn delay={0.2}>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 text-violet-600 text-xs font-semibold mb-6 uppercase tracking-wider dark:text-violet-400">
+                Product Lead
+              </div>
+              <h3 className="font-serif text-4xl md:text-5xl mb-4 text-foreground">NeuroLearn</h3>
+              <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
+                A gamified web platform making neuroscience education accessible and engaging for students.
+              </p>
+
+              <ul className="space-y-4 mb-10 text-foreground/80">
+                <ListItem>Identified gap in accessible neuroscience education and defined the MVP</ListItem>
+                <ListItem>Reduced feature scope by 40% to deliver within a 10-week timeline</ListItem>
+                <ListItem>Led a 4-person cross-functional team across front-end, data integration, and GitHub workflows</ListItem>
+                <ListItem>Resulted in a 30% increase in student engagement</ListItem>
+              </ul>
             </FadeIn>
           </div>
         </div>
       </section>
 
-      {/* Experience Timeline */}
+      {/* Experience */}
       <section className="px-6 md:px-12 lg:px-24 py-24 max-w-[1400px] mx-auto">
         <FadeIn>
           <div className="flex items-baseline justify-between mb-16 border-b border-border pb-6">
@@ -121,57 +171,53 @@ export default function Home() {
         </FadeIn>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
-          <StaggerContainer className="space-y-12">
-            <StaggerItem>
-              <h3 className="text-sm font-semibold text-primary uppercase tracking-widest mb-8 flex items-center gap-3">
-                <span className="w-8 h-px bg-primary"></span> Product Leadership
-              </h3>
-              <div className="space-y-12">
-                <ExperienceCard 
-                  role="Co-Founder & PM"
-                  company="Cache (AI-Powered Screenshot Organizer)"
-                  date="May 2026 – Present"
-                  description="Validated with 25 user interviews, led MVP definition, competitive analysis against major products, shipped in under a month with 150+ beta users, iterated based on feedback, defined analytics."
-                />
-                <ExperienceCard 
-                  role="Product Lead"
-                  company="NeuroLearn Web Platform"
-                  date="Jan – Mar 2026"
-                  description="Identified gap in neuroscience education, led 4-person cross-functional team, reduced feature scope 40% to ship within 10-week timeline, increased student engagement by 30%."
-                />
-                <ExperienceCard 
-                  role="Research Assistant"
-                  company="UW Informatics"
-                  date="Sep 2025 – Mar 2026"
-                  description="Defined product requirements for a public housing & climate risk dashboard, translated complex datasets into accessible UI, presented at UW Research Symposium."
-                />
-              </div>
-            </StaggerItem>
-          </StaggerContainer>
-
+          {/* LEFT: Professional roles */}
           <StaggerContainer className="space-y-12">
             <StaggerItem>
               <h3 className="text-sm font-semibold text-primary uppercase tracking-widest mb-8 flex items-center gap-3">
                 <span className="w-8 h-px bg-primary"></span> Professional
               </h3>
               <div className="space-y-12">
-                <ExperienceCard 
+                <ExperienceCard
                   role="Software Engineer Intern"
                   company="C2S Technologies"
-                  date="Jun 2026 – Present"
-                  description="Building an AI application using LLM workflows to transform product ideas into user stories, acceptance criteria, feature roadmaps, and Jira tasks. Developing AI workflows with OpenAI-compatible APIs."
+                  date="Jun 2026 - Present"
+                  description="Building an AI application using LLM workflows to transform product ideas into user stories, acceptance criteria, feature roadmaps, and Jira tasks. Developing AI workflows with OpenAI-compatible APIs. Biweekly product demos to industry professionals."
                 />
-                <ExperienceCard 
+                <ExperienceCard
                   role="Informatics Peer Advisor"
                   company="UW Information School"
-                  date="Jun 2026 – Present"
-                  description="Advises students on academic planning and career exploration, represents the school at admissions events."
+                  date="Jun 2026 - Present"
+                  description="Advises prospective and current Informatics students on academic planning, campus resources, and career exploration through one-on-one advising. Represents the Information School at admissions events, orientations, and student panels."
                 />
-                <ExperienceCard 
+                <ExperienceCard
                   role="Director of Corporate Relations"
                   company="Society of Women Engineers, UW"
-                  date="Mar 2026 – Present"
-                  description="Leads recruiter outreach and corporate engagement for a 5-member committee, coordinates with Microsoft, Boeing, Accenture, Texas Instruments."
+                  date="Mar 2026 - Present"
+                  description="Leads recruiter outreach and corporate engagement as Co-Director of a 5-member Corporate Events committee, organizing networking events, workshops, and recruiting opportunities. Coordinates with Microsoft, Boeing, Accenture, and Texas Instruments."
+                />
+              </div>
+            </StaggerItem>
+          </StaggerContainer>
+
+          {/* RIGHT: Product & Research */}
+          <StaggerContainer className="space-y-12">
+            <StaggerItem>
+              <h3 className="text-sm font-semibold text-primary uppercase tracking-widest mb-8 flex items-center gap-3">
+                <span className="w-8 h-px bg-primary"></span> Product &amp; Research
+              </h3>
+              <div className="space-y-12">
+                <ExperienceCard
+                  role="Co-Founder &amp; Product Manager"
+                  company="Cache (AI-Powered Screenshot Organizer)"
+                  date="May 2026 - Present"
+                  description="Validated with 25 user interviews, led MVP definition and competitive analysis against Google Photos, Apple Photos, MyMind, and Notion. Shipped in under one month with 150+ beta users, iterated based on feedback, and defined event analytics for activation and retention."
+                />
+                <ExperienceCard
+                  role="Research Assistant"
+                  company="UW Informatics"
+                  date="Sep 2025 - Mar 2026"
+                  description="Defined product requirements for a public dashboard analyzing housing and climate risk data across Washington, translating complex datasets into an accessible UI for residents and policymakers. Presented findings at the UW Research Symposium."
                 />
               </div>
             </StaggerItem>
@@ -179,7 +225,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Education & Leadership Grid */}
+      {/* Background: Education + Leadership */}
       <section className="px-6 md:px-12 lg:px-24 py-24 bg-card border-y border-border">
         <div className="max-w-[1400px] mx-auto">
           <FadeIn>
@@ -189,58 +235,76 @@ export default function Home() {
           </FadeIn>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            {/* Education */}
             <FadeIn delay={0.1}>
               <h3 className="font-serif text-3xl mb-8">Education</h3>
               <div className="group border border-border p-8 rounded-2xl bg-background hover:border-primary/30 transition-colors">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-4">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-6">
                   <div>
                     <h4 className="text-xl font-semibold">University of Washington, Seattle</h4>
-                    <p className="text-primary font-medium mt-1">B.S. Informatics & B.S. Electrical & Computer Engineering</p>
+                    <div className="mt-3 space-y-1">
+                      <p className="text-primary font-medium">B.S. Electrical and Computer Engineering</p>
+                      <p className="text-primary font-medium">B.S. Informatics</p>
+                    </div>
                   </div>
                   <span className="text-sm font-medium bg-muted px-3 py-1 rounded-full whitespace-nowrap">Exp. June 2028</span>
                 </div>
-                <div className="space-y-3 mt-6 text-muted-foreground">
-                  <p><strong className="text-foreground font-medium">GPA:</strong> 3.6 | Dean's List 2024–2026</p>
+                <div className="space-y-3 text-muted-foreground">
+                  <p><strong className="text-foreground font-medium">GPA:</strong> 3.6 | Dean's List 2024-2026</p>
                   <p><strong className="text-foreground font-medium">UW Academy (Robinson Center):</strong> Early university admit after 10th grade.</p>
                   <p><strong className="text-foreground font-medium">Coursework:</strong> Product and Information Systems Management, Data Structures and Algorithms, Foundational Skills for Data Science, Client-Side Development, Programming for Signal Processing</p>
                 </div>
               </div>
             </FadeIn>
 
+            {/* Leadership */}
             <FadeIn delay={0.2}>
-              <h3 className="font-serif text-3xl mb-8">Leadership & Recognition</h3>
-              <div className="space-y-6">
-                <div className="border border-border p-6 rounded-2xl bg-background">
-                  <h4 className="font-semibold text-lg mb-1">Co-Chair & Youth Representative</h4>
-                  <p className="text-primary text-sm mb-3">Issaquah Youth Advisory Board + Equity Board (Sep 2019–Present)</p>
-                  <p className="text-muted-foreground text-sm">Advises Mayor and City Council on youth and equity initiatives. Founded the NeuroArt Contest in support of Seattle Children's Guild. Presented on mental health, equity, and youth leadership at citywide conferences.</p>
+              <h3 className="font-serif text-3xl mb-8">Leadership</h3>
+              <div className="space-y-5">
+                <div className="border border-border p-6 rounded-2xl bg-background hover:border-primary/20 transition-colors">
+                  <h4 className="font-semibold text-base mb-1">Co-Chair</h4>
+                  <p className="text-primary text-sm font-medium mb-3">Issaquah Youth Advisory Board - Sep 2019 to Jun 2026</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Planned and led community events including Mental Health Conferences, Environmental Conferences, debates with the Mayor, Issy Kids Triathlon, and other youth engagement initiatives. Served on the board for six years, including five years as Teen Advocacy Co-Chair before being selected as Board Co-Chair. Collaborated with city officials, community organizations, and student leaders to create leadership and service opportunities for youth throughout the Issaquah School District.</p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="border border-border p-5 rounded-2xl bg-background">
-                    <h5 className="font-semibold text-sm mb-2 text-foreground">Honors & Awards</h5>
-                    <ul className="text-xs text-muted-foreground space-y-2">
-                      <li>• Dean's List (2024–2026)</li>
-                      <li>• DECA State Qualifier (Financial Ops Research & Pro Selling)</li>
-                      <li>• Debate: 2nd Place Seattle U (Public Forum)</li>
-                    </ul>
-                  </div>
-                  <div className="border border-border p-5 rounded-2xl bg-background">
-                    <h5 className="font-semibold text-sm mb-2 text-foreground">Activities</h5>
-                    <ul className="text-xs text-muted-foreground space-y-2">
-                      <li>• Incoming INFO 200 TA</li>
-                      <li>• UW Product Management Club</li>
-                      <li>• Robinson Center Peer Mentor</li>
-                      <li>• Campus Philharmonia Orchestra (Violin)</li>
-                    </ul>
-                  </div>
+
+                <div className="border border-border p-6 rounded-2xl bg-background hover:border-primary/20 transition-colors">
+                  <h4 className="font-semibold text-base mb-1">Youth Member</h4>
+                  <p className="text-primary text-sm font-medium mb-3">Issaquah Equity Board - Sep 2023 to Present</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Advise the Mayor, City Council, and City departments on initiatives related to equity, accessibility, and community engagement. Served as an Alternate Youth Member before being appointed as one of two Regular Youth Members representing youth perspectives. Collaborate with board members to review policies and provide recommendations that support Issaquah's diverse communities.</p>
+                </div>
+
+                <div className="border border-border p-6 rounded-2xl bg-background hover:border-primary/20 transition-colors">
+                  <h4 className="font-semibold text-base mb-1">Java &amp; Statistics Tutor</h4>
+                  <p className="text-primary text-sm font-medium mb-3">GoPeer - Aug 2024 to Jun 2026</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Tutored students in Java programming and statistics through individualized lessons focused on problem solving and conceptual understanding. Adapted teaching strategies to different learning styles while tracking student progress. Broke down technical concepts into approachable explanations, helping students build confidence in programming and quantitative reasoning.</p>
                 </div>
               </div>
             </FadeIn>
           </div>
+
+          {/* Activities - bigger standalone block */}
+          <FadeIn delay={0.3}>
+            <div className="mt-16 border border-border rounded-2xl bg-background p-8">
+              <h3 className="font-serif text-2xl mb-6">Activities</h3>
+              <div className="flex flex-wrap gap-3">
+                {[
+                  "Incoming INFO 200 Teaching Assistant",
+                  "UW Product Management Club",
+                  "Robinson Center Peer Mentor",
+                  "Campus Philharmonia Orchestra - Violin",
+                  "Society of Women Engineers - Director of Corporate Relations",
+                ].map((activity) => (
+                  <span key={activity} className="px-4 py-2.5 bg-muted rounded-xl text-sm font-medium border border-border/60 text-foreground/80">
+                    {activity}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
-      {/* Skills & Other */}
+      {/* Skills & Beyond the Screen */}
       <section className="px-6 md:px-12 lg:px-24 py-24 max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           <div className="lg:col-span-5">
@@ -256,7 +320,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">Tools & Design</h4>
+                  <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">Tools &amp; Design</h4>
                   <div className="flex flex-wrap gap-2">
                     {["Git", "GitHub", "Jira", "Figma", "Miro", "Sketch", "Adobe XD", "VS Code"].map(skill => (
                       <span key={skill} className="px-4 py-2 bg-muted rounded-lg text-sm font-medium border border-border/50">{skill}</span>
@@ -264,7 +328,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">AI & LLMs</h4>
+                  <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">AI &amp; LLMs</h4>
                   <div className="flex flex-wrap gap-2">
                     {["OpenAI API", "Claude API", "Google Gemini API", "AWS Bedrock", "Prompt Engineering", "LLM Evaluation"].map(skill => (
                       <span key={skill} className="px-4 py-2 bg-primary/10 text-primary rounded-lg text-sm font-medium border border-primary/20">{skill}</span>
@@ -279,26 +343,21 @@ export default function Home() {
             <FadeIn delay={0.2}>
               <h2 className="font-serif text-4xl mb-8">Beyond the Screen</h2>
               <div className="space-y-6">
-                <OtherCard 
-                  title="Study Abroad — Singapore"
-                  subtitle="Essentials of AI, Robotics & Automation (Aug–Sep 2025)"
-                  desc="Built live animal crossing detection system with Arduino, C++, and sensors; collaborated with NUS and Ngee Ann Polytechnic students."
+                <OtherCard
+                  title="Study Abroad - Singapore"
+                  subtitle="Essentials of AI, Robotics &amp; Automation (Aug - Sep 2025)"
+                  desc="Selected for UW's Early Fall study abroad program. Built a live animal crossing detection system using Arduino, sensors, and C++ as part of a collaborative engineering project. Explored cultural sites and collaborated with engineering students from Ngee Ann Polytechnic and the National University of Singapore."
                 />
-                <OtherCard 
+                <OtherCard
                   title="Classical Indian Vocal Training"
-                  subtitle="SAMPADA Carnatic Singing — Senior Certificate (May 2019–Aug 2025)"
-                  desc="6+ years of classical Indian vocal training. Proctored SAMPADA exams at UW for 3 years."
+                  subtitle="SAMPADA Carnatic Singing - Senior Certificate (May 2019 - Aug 2025)"
+                  desc="Completed six years of classical Indian vocal training, mastering compositions, music theory, and performance through written and practical examinations. Proctored annual SAMPADA certification examinations hosted at the University of Washington for three years."
                 />
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="p-4 border border-border rounded-xl">
-                    <h5 className="font-medium text-sm">Java & Statistics Tutor</h5>
-                    <p className="text-xs text-muted-foreground mt-1">GoPeer (Aug 2024–Jun 2026)</p>
-                  </div>
-                  <div className="p-4 border border-border rounded-xl">
-                    <h5 className="font-medium text-sm">Bharatanatyam Dance Teacher</h5>
-                    <p className="text-xs text-muted-foreground mt-1">From Within Academy</p>
-                  </div>
-                </div>
+                <OtherCard
+                  title="Bharatanatyam Dance Teacher"
+                  subtitle="From Within Academy (Sep 2023 - Jan 2025)"
+                  desc="Taught Bharatanatyam, a South Indian classical dance form, to students in Sammamish and virtually in India. After completing a four-hour Arangetram graduation performance, instructed students in hand gestures, footwork, facial expressions, posture, and choreography. Adapted lessons for students of different ages and experience levels while fostering confidence and artistic growth."
+                />
               </div>
             </FadeIn>
           </div>
@@ -313,7 +372,7 @@ export default function Home() {
               Let's build something extraordinary.
             </h2>
           </FadeIn>
-          
+
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-12 mt-24 border-t border-background/20 pt-12">
             <FadeIn delay={0.1}>
               <div className="space-y-2">
@@ -323,7 +382,7 @@ export default function Home() {
                 </a>
               </div>
             </FadeIn>
-            
+
             <FadeIn delay={0.2}>
               <div className="flex items-center gap-6">
                 <a href="https://linkedin.com/in/varnikadokka" target="_blank" rel="noreferrer" className="text-background/70 hover:text-background transition-colors flex items-center gap-2">
@@ -335,7 +394,7 @@ export default function Home() {
               </div>
             </FadeIn>
           </div>
-          
+
           <FadeIn delay={0.3}>
             <div className="mt-24 text-background/40 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
               <p>&copy; {new Date().getFullYear()} Varnika V. Dokka. All rights reserved.</p>
@@ -352,7 +411,7 @@ export default function Home() {
 
 function SocialLink({ href, icon, label }: { href: string; icon: React.ReactNode; label: string }) {
   return (
-    <a 
+    <a
       href={href}
       target="_blank"
       rel="noreferrer"
@@ -378,11 +437,9 @@ function ExperienceCard({ role, company, date, description }: { role: string; co
     <div className="group relative">
       <div className="absolute -inset-x-4 -inset-y-4 bg-muted/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity -z-10"></div>
       <p className="text-sm font-medium text-muted-foreground mb-2">{date}</p>
-      <h4 className="text-xl font-semibold text-foreground mb-1">{role}</h4>
-      <p className="text-primary font-medium mb-4">{company}</p>
-      <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
-        {description}
-      </p>
+      <h4 className="text-xl font-semibold text-foreground mb-1" dangerouslySetInnerHTML={{ __html: role }} />
+      <p className="text-primary font-medium mb-4" dangerouslySetInnerHTML={{ __html: company }} />
+      <p className="text-muted-foreground leading-relaxed text-sm md:text-base">{description}</p>
     </div>
   );
 }
@@ -391,7 +448,7 @@ function OtherCard({ title, subtitle, desc }: { title: string; subtitle: string;
   return (
     <div className="p-6 border border-border rounded-2xl bg-card hover:shadow-lg transition-shadow">
       <h4 className="font-semibold text-lg">{title}</h4>
-      <p className="text-primary text-sm font-medium mt-1 mb-3">{subtitle}</p>
+      <p className="text-primary text-sm font-medium mt-1 mb-3" dangerouslySetInnerHTML={{ __html: subtitle }} />
       <p className="text-muted-foreground text-sm leading-relaxed">{desc}</p>
     </div>
   );
