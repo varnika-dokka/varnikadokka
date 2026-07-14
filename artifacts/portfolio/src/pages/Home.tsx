@@ -11,6 +11,32 @@ export default function Home() {
       {/* Abstract background texture */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.03] z-50 mix-blend-multiply" style={{ backgroundImage: 'url("https://grainy-gradients.vercel.app/noise.svg")' }}></div>
 
+      {/* Nav */}
+      <nav className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-6 md:px-12 lg:px-24 py-5">
+        <span className="font-serif text-lg tracking-tight text-foreground/80 select-none">VD</span>
+        <div className="flex items-center gap-1 bg-background/80 backdrop-blur-md border border-border/60 rounded-full px-4 py-2 shadow-sm">
+          {[
+            { label: "Work", href: "#work" },
+            { label: "Experience", href: "#experience" },
+            { label: "Background", href: "#background" },
+            { label: "About", href: "#about" },
+            { label: "Contact", href: "#contact" },
+          ].map(({ label, href }) => (
+            <a
+              key={href}
+              href={href}
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="px-3 py-1.5 rounded-full text-sm font-medium text-foreground/60 hover:text-foreground hover:bg-muted transition-all"
+            >
+              {label}
+            </a>
+          ))}
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex flex-col justify-center px-6 md:px-12 lg:px-24 pt-24 pb-12 max-w-[1400px] mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16 max-w-6xl">
@@ -70,7 +96,7 @@ export default function Home() {
       </section>
 
       {/* Featured Work */}
-      <section className="px-6 md:px-12 lg:px-24 py-24 bg-card max-w-[1400px] mx-auto rounded-t-[3rem]">
+      <section id="work" className="px-6 md:px-12 lg:px-24 py-24 bg-card max-w-[1400px] mx-auto rounded-t-[3rem]">
         <FadeIn>
           <div className="flex items-baseline justify-between mb-16 border-b border-border pb-6">
             <h2 className="font-serif text-4xl md:text-5xl text-foreground">Featured Work</h2>
@@ -160,7 +186,7 @@ export default function Home() {
       </section>
 
       {/* Experience */}
-      <section className="px-6 md:px-12 lg:px-24 py-24 max-w-[1400px] mx-auto">
+      <section id="experience" className="px-6 md:px-12 lg:px-24 py-24 max-w-[1400px] mx-auto">
         <FadeIn>
           <div className="flex items-baseline justify-between mb-16 border-b border-border pb-6">
             <h2 className="font-serif text-4xl md:text-5xl text-foreground">Experience</h2>
@@ -229,7 +255,7 @@ export default function Home() {
       </section>
 
       {/* Background: Education + Leadership */}
-      <section className="px-6 md:px-12 lg:px-24 py-24 bg-card border-y border-border">
+      <section id="background" className="px-6 md:px-12 lg:px-24 py-24 bg-card border-y border-border">
         <div className="max-w-[1400px] mx-auto">
           <FadeIn>
             <div className="flex items-baseline justify-between mb-16 border-b border-border pb-6">
@@ -322,7 +348,7 @@ export default function Home() {
       </section>
 
       {/* Why PM + Outside of Work */}
-      <section className="px-6 md:px-12 lg:px-24 py-24 max-w-[1400px] mx-auto">
+      <section id="about" className="px-6 md:px-12 lg:px-24 py-24 max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <FadeIn delay={0.1}>
             <div className="p-10 rounded-3xl bg-primary/5 border border-primary/15 h-full">
@@ -415,7 +441,7 @@ export default function Home() {
       </section>
 
       {/* Footer / Contact */}
-      <footer className="bg-foreground text-background py-24 px-6 md:px-12 lg:px-24">
+      <footer id="contact" className="bg-foreground text-background py-24 px-6 md:px-12 lg:px-24">
         <div className="max-w-[1400px] mx-auto">
           <FadeIn>
             <h2 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-8 max-w-4xl text-background/90 leading-tight">
