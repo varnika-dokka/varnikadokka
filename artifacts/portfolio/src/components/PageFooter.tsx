@@ -7,7 +7,7 @@ export default function PageFooter() {
       <div className="max-w-[1400px] mx-auto">
         <FadeIn>
           <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl mb-8 max-w-3xl text-background/90 leading-tight">
-Let's chat.
+I'm always open to new opportunities — let's talk.
           </h2>
         </FadeIn>
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-12 mt-16 border-t border-background/20 pt-12">
