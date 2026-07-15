@@ -2,6 +2,7 @@ import { Link, useLocation } from "wouter";
 import { Mail } from "lucide-react";
 
 const links = [
+  { label: "Home", href: "/" },
   { label: "Projects", href: "/projects" },
   { label: "Experience", href: "/experience" },
   { label: "Background", href: "/background" },

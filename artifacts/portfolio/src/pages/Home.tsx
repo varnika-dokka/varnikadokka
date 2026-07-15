@@ -68,10 +68,10 @@ export default function Home() {
 
           <FadeIn delay={0.3}>
             <div className="hidden lg:block shrink-0 mt-8 lg:mt-0">
-              <div className="relative w-72 h-72 xl:w-80 xl:h-80">
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 via-amber-300/20 to-violet-300/30 scale-105 blur-sm" />
-                <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl border border-white/40">
-                  <img src={headshot} alt="Varnika V. Dokka" className="w-full h-full object-cover object-top" />
+              <div className="relative w-88 h-88 xl:w-96 xl:h-96" style={{ width: '22rem', height: '22rem' }}>
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/30 via-amber-300/20 to-violet-300/30 scale-105 blur-md" />
+                <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl border-2 border-white/60">
+                  <img src={headshot} alt="Varnika V. Dokka" className="w-full h-full object-cover object-center" />
                 </div>
               </div>
             </div>
