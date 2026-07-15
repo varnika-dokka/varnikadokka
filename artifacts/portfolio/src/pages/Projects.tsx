@@ -8,7 +8,7 @@ import GradientBg from "@/components/GradientBg";
 import cacheImg from "@assets/cache-screenshot.png";
 import neuroLearnImg from "@assets/neurolearn-screenshot.png";
 import researchImg from "@assets/research-dashboard-mockup.jpg";
-import learnMateImg from "@assets/learnmate-mockup.jpg";
+import learnMateImg from "@assets/learnmate-mockup_3.jpg";
 
 export default function Projects() {
   useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior }); }, []);
