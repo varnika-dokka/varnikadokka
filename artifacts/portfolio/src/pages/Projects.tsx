@@ -7,7 +7,7 @@ import PageFooter from "@/components/PageFooter";
 import GradientBg from "@/components/GradientBg";
 import cacheImg from "@assets/cache-screenshot.png";
 import neuroLearnImg from "@assets/neurolearn-screenshot.png";
-import researchImg from "@assets/research-dashboard-mockup.jpg";
+import researchImg from "@assets/research-dashboard-mockup_2025.jpg";
 import learnMateImg from "@assets/learnmate-mockup_3.jpg";
 
 export default function Projects() {
