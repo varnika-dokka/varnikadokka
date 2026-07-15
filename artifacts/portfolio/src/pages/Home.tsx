@@ -66,7 +66,7 @@ export default function Home() {
           </div>
 
           <FadeIn delay={0.3}>
-            <div className="hidden lg:block shrink-0 mt-8 lg:mt-0">
+            <div className="hidden md:block shrink-0 mt-8 lg:mt-0">
               <div className="relative w-88 h-88 xl:w-96 xl:h-96" style={{ width: '22rem', height: '22rem' }}>
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/30 via-amber-300/20 to-violet-300/30 scale-105 blur-md" />
                 <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl border-2 border-white/60">
