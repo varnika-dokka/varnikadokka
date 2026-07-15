@@ -34,11 +34,10 @@ export default function Home() {
             </FadeIn>
 
             <FadeIn delay={0.2}>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-medium text-foreground/80 leading-snug mb-10 max-w-3xl">
-                <span className="text-primary">Aspiring</span> Product Manager{" "}
-                <span className="text-primary/50 mx-2">&middot;</span> AI Product Builder{" "}
-                <span className="text-primary/50 mx-2">&middot;</span> Informatics &amp; Electrical and Computer Engineering @ UW
-              </h2>
+              <div className="text-xl md:text-2xl lg:text-3xl font-medium text-foreground/80 leading-snug mb-10 max-w-3xl space-y-1">
+                <div><span className="text-primary">Aspiring</span> Product Manager <span className="text-primary/40 mx-1">&middot;</span> AI Product Builder</div>
+                <div>Informatics &amp; ECE @ UW</div>
+              </div>
             </FadeIn>
 
             <FadeIn delay={0.3}>
