@@ -33,8 +33,8 @@ export default function About() {
               </div>
               <h2 className="font-serif text-3xl md:text-4xl mb-6 text-foreground">Why Product Management</h2>
               <div className="text-muted-foreground leading-relaxed space-y-4 text-base">
-                <p>Before I had the title, I was already doing the work. Leading city advisory boards, running community events, advocating for equity - every role required translating messy, real-world problems into clear action across different people and perspectives. Product management just gave it a name.</p>
-                <p>What draws me in is the moment ambiguity starts to resolve. Going from "there's a problem here" to 25 user interviews, a defined MVP, and 150 beta users - that arc is where I feel most alive. PM is where I get to combine what I care about most: understanding people, thinking in systems, and actually shipping something.</p>
+                <p>I'm drawn to product management because it brings together the things I enjoy most: understanding people, solving problems, and building ideas into something real. I love the process of taking an unclear challenge, finding what truly matters, and working with others to create solutions that make an impact.</p>
+                <p>Through my experiences building projects and collaborating with different teams, I've found that I enjoy connecting user needs with thoughtful, meaningful products.</p>
               </div>
             </div>
           </FadeIn>
@@ -47,8 +47,8 @@ export default function About() {
               </div>
               <h2 className="font-serif text-3xl md:text-4xl mb-6 text-foreground">A Little About Me</h2>
               <div className="text-muted-foreground leading-relaxed space-y-4 text-base">
-                <p>I play violin in UW's Campus Philharmonia and spent six years studying Carnatic vocals. I've also taught Bharatanatyam - a South Indian classical dance form - which has taught me more about patience and precision than almost anything else I've done.</p>
-                <p>I love traveling (studying abroad in Singapore was a highlight), staying active, and mentoring students coming up through programs like Robinson Center. Equity and inclusion aren't just things I put on a resume - they're part of why I ended up on an advisory board at 14 and why I still show up for those spaces today.</p>
+                <p>When I'm not working on projects, you can usually find me hiking, exploring new places, or spending time with friends and family. I've spent years learning Carnatic vocals, which has shaped my creativity, patience, and discipline.</p>
+                <p>I also enjoy mentoring students and being involved in communities that support and inspire others.</p>
               </div>
             </div>
           </FadeIn>
@@ -100,12 +100,12 @@ export default function About() {
             <OtherCard
               title="Study Abroad - Singapore"
               subtitle="Essentials of AI, Robotics &amp; Automation (Aug - Sep 2025)"
-              desc="Selected for UW's Early Fall program in Singapore. Built a live animal-crossing detection system using Arduino, sensors, and C++ as part of a collaborative engineering project. Explored the city and worked alongside students from Ngee Ann Polytechnic and NUS."
+              desc="Selected for UW's Early Fall program in Singapore. Built a live animal-crossing detection system using Arduino, sensors, and C++ as part of a collaborative engineering project. Explored the city and worked alongside students from National University of Singapore and Ngee Ann Polytechnic."
             />
             <OtherCard
               title="Classical Indian Vocal Training"
               subtitle="SAMPADA Carnatic Singing - Senior Certificate (May 2019 - Aug 2025)"
-              desc="Completed six years of classical Indian vocal training and earned a Senior Certificate through written and practical exams. Proctored annual SAMPADA certification exams hosted at the University of Washington for three years."
+              desc="Completed six years of classical Indian vocal training and earned a Senior Certificate through written and practical exams. Proctor annual SAMPADA certification exams hosted at the University of Washington — a role I've held for the past three years and continue to this day."
             />
             <OtherCard
               title="Bharatanatyam Dance Teacher"

@@ -7,7 +7,7 @@ import PageFooter from "@/components/PageFooter";
 import GradientBg from "@/components/GradientBg";
 import cacheImg from "@assets/cache-screenshot.png";
 import neuroLearnImg from "@assets/neurolearn-screenshot.png";
-import researchImg from "@assets/research-dashboard-mockup_2025.jpg";
+import researchImg from "@assets/research-dashboard-mockup.jpg";
 import learnMateImg from "@assets/learnmate-mockup_3.jpg";
 
 export default function Projects() {
@@ -62,6 +62,7 @@ export default function Projects() {
             "Reduced feature scope by 40% to deliver within a 10-week timeline",
             "Led a 4-person cross-functional team across front-end, data integration, and GitHub workflows",
             "Resulted in a 30% increase in student engagement",
+            "Tech: HTML, CSS, React",
           ]}
           link={{ href: "https://neurolearn-draft2.web.app/", label: "View Live Site", color: "bg-violet-600 hover:bg-violet-700" }}
         />
@@ -78,8 +79,9 @@ export default function Projects() {
           bullets={[
             "Defined product requirements and translated complex datasets into an accessible UI",
             "Visualized rent burden, climate risk indices, and housing deficits across all 39 WA counties",
-            "Built for equity-focused audiences — residents, city planners, and state legislators",
+            "Built for equity-focused audiences - residents, city planners, and state legislators",
             "Presented findings at the UW Research Symposium",
+            "Tech: R, Google Gemini API",
           ]}
         />
 
@@ -97,6 +99,7 @@ export default function Projects() {
             "Integrated Gemini API to generate personalized explanations, examples, and practice problems",
             "Designed subject-based chat interface with Math, History, Chemistry, and Literature modules",
             "Focused on making AI tutoring feel conversational and curriculum-aligned",
+            "Tech: JavaScript, HTML/CSS, Google Gemini API",
           ]}
         />
       </main>

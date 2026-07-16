@@ -42,13 +42,13 @@ export default function Experience() {
                   role="Informatics Peer Advisor"
                   company="UW Information School"
                   date="Jun 2026 - Present"
-                  description="Advises prospective and current Informatics students on academic planning, campus resources, and career exploration through one-on-one advising. Represents the Information School at admissions events, orientations, and student panels."
+                  description="Advise prospective and current Informatics students on academic planning, campus resources, and career exploration through one-on-one advising. Represent the Information School at admissions events, orientations, and student panels."
                 />
                 <ExperienceCard
                   role="Director of Corporate Relations"
                   company="Society of Women Engineers, UW"
                   date="Mar 2026 - Present"
-                  description="Leads recruiter outreach and corporate engagement as Co-Director of a 5-member Corporate Events committee, organizing networking events, workshops, and recruiting opportunities. Coordinates with Microsoft, Boeing, Accenture, and Texas Instruments."
+                  description="Lead recruiter outreach and corporate engagement as Co-Director of a 5-member Corporate Events committee, organizing networking events, workshops, and recruiting opportunities. Coordinate with Microsoft, Boeing, Accenture, and Texas Instruments."
                 />
               </div>
             </StaggerItem>
