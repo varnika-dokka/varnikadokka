@@ -78,6 +78,39 @@ export default function Home() {
         </div>
       </main>
 
+      {/* Guiding Values */}
+      <section className="relative z-10 px-6 md:px-12 lg:px-24 pb-24 max-w-[1400px] mx-auto w-full">
+        <FadeIn delay={0.5}>
+          <div className="flex items-center gap-3 mb-10">
+            <span className="h-px w-8 bg-primary" />
+            <span className="text-primary font-medium tracking-wide uppercase text-sm">Guiding Values</span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="p-8 rounded-3xl bg-white/60 backdrop-blur-sm border border-amber-200/70">
+              <div className="w-10 h-10 rounded-2xl bg-amber-100 flex items-center justify-center mb-5">
+                <span className="text-xl">🧭</span>
+              </div>
+              <h3 className="font-serif text-2xl mb-3 text-foreground">Start with People</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">The best solutions come from actually listening. Before I think about what to build, I want to understand who I'm building for — what they're struggling with, what they've already tried, and what would genuinely make their lives easier.</p>
+            </div>
+            <div className="p-8 rounded-3xl bg-white/60 backdrop-blur-sm border border-violet-200/70">
+              <div className="w-10 h-10 rounded-2xl bg-violet-100 flex items-center justify-center mb-5">
+                <span className="text-xl">✦</span>
+              </div>
+              <h3 className="font-serif text-2xl mb-3 text-foreground">Clarity Over Complexity</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">Hard problems deserve simple answers. I'm drawn to the work of taking something messy and making it feel obvious — whether that's a dashboard showing housing data or a product that cuts scope by 40% to actually ship on time.</p>
+            </div>
+            <div className="p-8 rounded-3xl bg-white/60 backdrop-blur-sm border border-rose-200/70">
+              <div className="w-10 h-10 rounded-2xl bg-rose-100 flex items-center justify-center mb-5">
+                <span className="text-xl">🌱</span>
+              </div>
+              <h3 className="font-serif text-2xl mb-3 text-foreground">Build What Matters</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">Shipping for the sake of it doesn't interest me. I care about whether what I'm building actually solves something — and I'll advocate for the features users asked for, push back on the ones they didn't, and keep asking "why does this matter?" until there's a real answer.</p>
+            </div>
+          </div>
+        </FadeIn>
+      </section>
+
       <PageFooter />
     </div>
   );
