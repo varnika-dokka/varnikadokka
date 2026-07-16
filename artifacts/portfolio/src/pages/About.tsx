@@ -105,7 +105,7 @@ export default function About() {
             <OtherCard
               title="Classical Indian Vocal Training"
               subtitle="SAMPADA Carnatic Singing - Senior Certificate (May 2019 - Aug 2025)"
-              desc="Completed six years of classical Indian vocal training and earned a Senior Certificate through written and practical exams. Proctor annual SAMPADA certification exams hosted at the University of Washington — a role I've held for the past three years and continue to this day."
+              desc="Completed six years of classical Indian vocal training and earned a Senior Certificate through written and practical exams. Proctor annual SAMPADA certification exams hosted at the University of Washington, a role I've held for the past three years and continue to this day."
             />
             <OtherCard
               title="Bharatanatyam Dance Teacher"
