@@ -42,7 +42,7 @@ export default function Background() {
                   <span className="text-sm font-medium bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full whitespace-nowrap">Exp. June 2028</span>
                 </div>
                 <div className="space-y-3 text-muted-foreground">
-                  <p><strong className="text-foreground font-medium">GPA:</strong> 3.6 | Dean's List 2024-2026</p>
+                  <p><strong className="text-foreground font-medium">Dean's List:</strong> 2024-2026</p>
                   <p><strong className="text-foreground font-medium">UW Academy (Robinson Center):</strong> Early university admit after 10th grade.</p>
                   <p><strong className="text-foreground font-medium">Coursework:</strong> Product and Information Systems Management, Data Structures and Algorithms, Foundational Skills for Data Science, Client-Side Development, Programming for Signal Processing</p>
                 </div>
@@ -57,7 +57,7 @@ export default function Background() {
                   <span className="text-sm font-medium bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full whitespace-nowrap">2022 - 2024</span>
                 </div>
                 <div className="space-y-2 text-muted-foreground">
-                  <p><strong className="text-foreground font-medium">GPA:</strong> 3.95 | National Honor Society</p>
+                  <p><strong className="text-foreground font-medium">National Honor Society</strong></p>
                   <p><strong className="text-foreground font-medium">Activities:</strong> DECA, JSA, NHS, Robotics, Chamber Orchestra</p>
                 </div>
               </div>
